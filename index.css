@@ -100,7 +100,7 @@
   }
 
 
-/* Establece el orden de visualización */
+/* /* ---------------equipo 1----------- */ 
 .posicion1{
     position: absolute;
     left: 0;
@@ -114,112 +114,42 @@
     left: 11%;
 }
 
-.posicion4{
-    position: absolute;
-    top: 25%;
-    left: 11%;
-}
-
-.posicion5{
-    position: absolute;
-    top: 48%;
-    left: 11%;
-}
-
 .posicion3{
     position: absolute;
     bottom: 0%;
     left: 11%;
 }
 
+.posicion4{
+    position: absolute;
+    top: 39.9%;
+    left: 11%;
+}
+
+.posicion5{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+}
 .posicion6{
     position: absolute;
-    top: 4%;
-    left: 22%;
-}
-
-.posicion8{
-    position: absolute;
-    top: 25%;
-    left: 22%;
-}
-
-.posicion9{
-    position: absolute;
-    top: 48%;
-    left: 22%;
+    top: 22%;
+    left: 25%;
 }
 
 .posicion7{
     position: absolute;
-    bottom: 0;
-    left: 22%;
+    bottom: 38%;
+    left: 39%;
 }
 
-.posicion10{
-    position: absolute;
-    top: 25%;
-    left: 33%;
-}
+/* ---------------equipo 2----------- */
 
-.posicion11{
+.posicion12{
     position: absolute;
-    bottom: 29.7%;
-    left: 33%;
-}
-
-.posicion22{
-    position: absolute;
-    bottom: 29.7%;
-    right: 33%;
-}
-
-.posicion21{
-    position: absolute;
-    top: 25%;
-    right: 33%;
-}
-
-.posicion18{
-    position: absolute;
-    top: 4%;
-    right: 22%;
-}
-
-.posicion20{
-    position: absolute;
-    top: 25%;
-    right: 22%;
-}
-
-.posicion19{
-    position: absolute;
-    bottom: 30%;
-    right: 22%;
-}
-
-.posicion17{
-    position: absolute;
-    bottom: 0%;
-    right: 22%;
-}
-
-.posicion14{
-    position: absolute;
-    bottom: 0%;
-    right: 11%;
-}
-
-.posicion16{
-    position: absolute;
-    bottom: 30%;
-    right: 11%;
-}
-
-.posicion15{
-    position: absolute;
-    top: 25%;
-    right: 11%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
 }
 
 .posicion13{
@@ -228,11 +158,34 @@
     right: 11%;
 }
 
-.posicion12{
+.posicion14{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
+    bottom: 0%;
+    right: 11%;
+}
+
+.posicion15{
+    position: absolute;
+    top: 40%;
+    right: 11%;
+}
+
+.posicion16{
+    position: absolute;
+    bottom: 56%;
+    right: 24%;
+}
+
+.posicion17{
+    position: absolute;
+    bottom: 20%;
+    right: 24%;
+}
+
+.posicion18{
+    position: absolute;
+    top: 40%;
+    right: 39%;
 }
 
 @media (max-width: 435px){
@@ -268,74 +221,53 @@
     .carta p{
         display: none;
     }
+
+    /* ---------------equipo 1----------- */
+
     .posicion1{
         position: absolute;
-        top: 0;
+        top: 4%;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .posicion2{
         position: absolute;
-        top: 11%;
+        top: 15%;
         left: 10%;
     }
 
     .posicion3{
         position: absolute;
-        top: 11%;
+        top: 15%;
         left: 75%;
     }
 
     .posicion4{
         position: absolute;
-        top: 11%;
-        left: 31%;
+        top: 15%;
+        left: 44%;
     }
 
     .posicion5{
         position: absolute;
-        top: 11%;
-        left: 54%;
+        top: 26%;
+        left: 28%;
     }
 
     .posicion6 {
         position: absolute;
-        top: 23%;
-        left: 75%;
+        top: 26%;
+        left: 60%;
     }
 
     .posicion7 {
         position: absolute;
-        top: 23%;
-        left: 10%;
+        top: 39%;
+        left: 43%;;
     }
 
-    .posicion8 {
-        position: absolute;
-        top: 23%;
-        left: 31%;
-    }
-
-    .posicion9 {
-        position: absolute;
-        top: 23%;
-        left: 54%;
-    }
-
-    .posicion10 {
-        position: absolute;
-        top: 36%;
-        left: 31%;
-    }
-
-    .posicion11 {
-        position: absolute;
-        top: 36%;
-        left: 54%;
-    }
-
-    /* ************************************* */
+    /* *******************equipo 2****************** */
 
     .posicion12{
         position: absolute;
@@ -353,56 +285,33 @@
 
     .posicion14 {
         position: absolute;
-        bottom: 11%;
+        bottom: 14%;
         right: 73%;
     }
 
     .posicion15 {
         position: absolute;
         top: 78%;
-        right: 29%;
+        right: 42%;
     }
 
     .posicion16 {
         position: absolute;
-        bottom: 11%;
-        right: 53%;
+        bottom: 25%;
+        right: 59%;
     }
 
     .posicion17 {
         position: absolute;
         bottom: 25%;
-        right: 9%;
+        right: 25%;
     }
 
     .posicion18 {
         position: absolute;
-        top: 63.8%;
-        right: 73%;
+        top: 56%;
+        right: 43%;
     }
 
-    .posicion19 {
-        position: absolute;
-        bottom: 25%;
-        right: 29%;
-    }
-
-    .posicion20 {
-        position: absolute;
-        top: 63.8%;
-        right: 53%;
-    }
-
-    .posicion21 {
-        position: absolute;
-        top: 52%;
-        right: 29%;
-    }
-
-    .posicion22 {
-        position: absolute;
-        bottom: 36.7%;
-        right: 53%;
-    }
 
 }

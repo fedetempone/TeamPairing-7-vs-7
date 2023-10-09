@@ -280,27 +280,6 @@ const JUGADORES = [
   //   } ,
   //   IMG: './jugadores/none.jpg'
   // }
-
-  document.getElementById("alternarCentrales").addEventListener("click", () => {
-    alternarJugadores("Central");
-  });
-  
-  document.getElementById("alternarLaterales").addEventListener("click", () => {
-    alternarJugadores("Lateral");
-  });
-  
-  document.getElementById("alternarMediocampistas").addEventListener("click", () => {
-    alternarJugadores("Mediocampista");
-  });
-  
-  document.getElementById("alternarVolantes").addEventListener("click", () => {
-    alternarJugadores("Volante");
-  });
-  
-  document.getElementById("alternarDelanteros").addEventListener("click", () => {
-    alternarJugadores("Delantero");
-  });
-
   document.getElementById("alternarCentral").addEventListener("click", () => {
     alternarJugadoresPorPosicion("Central");
   });
@@ -313,10 +292,6 @@ const JUGADORES = [
     alternarJugadoresPorPosicion("Mediocampista");
   });
   
-  document.getElementById("alternarVolante").addEventListener("click", () => {
-    alternarJugadoresPorPosicion("Volante");
-  });
-  
   document.getElementById("alternarDelantero").addEventListener("click", () => {
     alternarJugadoresPorPosicion("Delantero");
   });
@@ -327,55 +302,44 @@ const JUGADORES = [
     const arqueros = jugadores.filter((jugador) => jugador.Habilidades.Posicion === 'Arquero');
     const laterales = jugadores.filter((jugador) => jugador.Habilidades.Posicion === 'Lateral');
     const centrales = jugadores.filter((jugador) => jugador.Habilidades.Posicion === 'Central');
-    const volantes = jugadores.filter((jugador) => jugador.Habilidades.Posicion === 'Volante');
     const mediocampistas = jugadores.filter((jugador) => jugador.Habilidades.Posicion === 'Mediocampista');
     const delanteros = jugadores.filter((jugador) => jugador.Habilidades.Posicion === 'Delantero');
-
+  
     // Ordenar jugadores por habilidades
     arqueros.sort((a, b) => habilidadesTotal(b) - habilidadesTotal(a));
     laterales.sort((a, b) => habilidadesTotal(b) - habilidadesTotal(a));
     centrales.sort((a, b) => habilidadesTotal(b) - habilidadesTotal(a));
-    volantes.sort((a, b) => habilidadesTotal(b) - habilidadesTotal(a));
     mediocampistas.sort((a, b) => habilidadesTotal(b) - habilidadesTotal(a));
     delanteros.sort((a, b) => habilidadesTotal(b) - habilidadesTotal(a));
-
+  
     // Armar equipos equilibrados
     const equipo1 = [
-        arqueros[0],
-        laterales[0],
-        centrales[0],
-        centrales[1],
-        laterales[1],
-        volantes[0],
-        mediocampistas[0],
-        volantes[1],
-        mediocampistas[1],
-        delanteros[0],
-        delanteros[1],
+      arqueros[0],
+      laterales[0],
+      centrales[0],
+      laterales[1],
+      mediocampistas[0],
+      mediocampistas[1],
+      delanteros[0]
     ];
-
+  
     const equipo2 = [
-        arqueros[1],
-        laterales[2],
-        centrales[2],
-        centrales[3],
-        laterales[3],
-        volantes[2],
-        mediocampistas[2],
-        volantes[3],
-        mediocampistas[3],
-        delanteros[2],
-        delanteros[3],
+      arqueros[1],
+      laterales[2],
+      centrales[1],
+      laterales[3],
+      mediocampistas[2],
+      mediocampistas[3],
+      delanteros[1]
     ];
-
+  
     return { equipo1, equipo2 };
-
+  
     // Función auxiliar para calcular la puntuación de habilidades de un jugador
     function habilidadesTotal(jugador) {
-        return jugador.Habilidades.Ataque + jugador.Habilidades.Defensa + jugador.Habilidades.Velocidad + jugador.Habilidades.Aceleracion;
+      return jugador.Habilidades.Ataque + jugador.Habilidades.Defensa + jugador.Habilidades.Velocidad + jugador.Habilidades.Aceleracion;
     }
-}
-
+  }
 const equipos = formarEquipos(JUGADORES);
 
 function mostrarJugadoresEnPagina() {
@@ -454,34 +418,6 @@ ordenPosiciones.forEach((posicion) => {
 }
 
 mostrarJugadoresEnPagina();
-
-function alternarJugadores(posicion) {
-  // Encuentra todos los jugadores de la posición deseada en ambos equipos
-  const jugadoresEquipo1 = equipos.equipo1.filter((jugador) => jugador.Habilidades.Posicion === posicion);
-  const jugadoresEquipo2 = equipos.equipo2.filter((jugador) => jugador.Habilidades.Posicion === posicion);
-
-  // Intercambia los jugadores entre los equipos si se encontraron en ambas posiciones
-  if (jugadoresEquipo1.length === 2 && jugadoresEquipo2.length === 2) {
-    equipos.equipo1 = equipos.equipo1.map((jugador) => {
-      if (jugador.Habilidades.Posicion === posicion) {
-        return jugadoresEquipo2.shift();
-      }
-      return jugador;
-    });
-
-    equipos.equipo2 = equipos.equipo2.map((jugador) => {
-      if (jugador.Habilidades.Posicion === posicion) {
-        return jugadoresEquipo1.shift();
-      }
-      return jugador;
-    });
-
-    // Vuelve a mostrar los jugadores en la página
-    mostrarJugadoresEnPagina();
-  } else {
-    console.log(`No se encontraron suficientes jugadores de ${posicion} en ambos equipos.`);
-  }
-}
 
 function alternarArqueros() {
   // Encuentra los arqueros de ambos equipos
