@@ -170,9 +170,9 @@ const JUGADORES = [
     IMG: './jugadores/metalero.png'
   },
   { 
-    Nombre: "Marcelito", 
+    Nombre: "Nico", 
     Habilidades: { 
-      Ataque: "Normal", 
+      Ataque: "Bajo", 
       Defensa: "Normal", 
       Velocidad: "Normal", 
       Aceleracion: "Normal", 
@@ -203,15 +203,15 @@ const JUGADORES = [
     IMG: './jugadores/leo.png'
   },
   { 
-    Nombre: "Daro", 
+    Nombre: "Rulo", 
     Habilidades: { 
       Ataque: "Normal", 
-      Defensa: "Bajo", 
+      Defensa: "Normal", 
       Velocidad: "Normal", 
-      Aceleracion: "Bueno", 
+      Aceleracion: "Bajo", 
       Posicion: "Lateral" 
-    },
-    IMG: './jugadores/none.jpg'
+    } ,
+    IMG: './jugadores/ariel.png'
   },
   { 
     Nombre: "Mati", 
@@ -225,7 +225,7 @@ const JUGADORES = [
     IMG: './jugadores/mati.png'
   },
   { 
-    Nombre: "Copes", 
+    Nombre: "Yoel", 
     Habilidades: { 
       Ataque: "Normal", 
       Defensa: "Normal", 
@@ -236,18 +236,18 @@ const JUGADORES = [
     IMG: './jugadores/none.jpg'
   },
   { 
-    Nombre: "Rulo", 
+    Nombre: "Daro", 
     Habilidades: { 
       Ataque: "Normal", 
       Defensa: "Normal", 
       Velocidad: "Normal", 
-      Aceleracion: "Bajo", 
+      Aceleracion: "Bueno", 
       Posicion: "Lateral" 
-    } ,
+    },
     IMG: './jugadores/none.jpg'
   },
   { 
-    Nombre: "Lean", 
+    Nombre: "Fede(mati)", 
     Habilidades: { 
       Ataque: "Bueno", 
       Defensa: "Normal", 
@@ -255,7 +255,7 @@ const JUGADORES = [
       Aceleracion: "Bueno", 
       Posicion: "Mediocampista" 
     } ,
-    IMG: './jugadores/lean.png'
+    IMG: './jugadores/none.jpg'
   },
   { 
     Nombre: "Seb", 
@@ -280,17 +280,6 @@ const JUGADORES = [
     IMG: './jugadores/none.jpg'
   },
   { 
-    Nombre: "Dany", 
-    Habilidades: { 
-      Ataque: "Bueno", 
-      Defensa: "Bajo", 
-      Velocidad: "Normal", 
-      Aceleracion: "Bajo", 
-      Posicion: "Delantero" 
-    } ,
-    IMG: './jugadores/none.jpg'
-  },
-  { 
     Nombre: "Fede T", 
     Habilidades: { 
       Ataque: "Normal", 
@@ -302,18 +291,27 @@ const JUGADORES = [
     IMG: './jugadores/none.jpg'
   },
   { 
-    Nombre: "Marce", 
+    Nombre: "Bocha", 
     Habilidades: { 
       Ataque: "Bueno", 
       Defensa: "Bajo", 
       Velocidad: "Normal", 
-      Aceleracion: "Normal", 
+      Aceleracion: "Bajo", 
       Posicion: "Delantero" 
     } ,
-    IMG: './jugadores/marce.png'
+    IMG: './jugadores/none.jpg'
   },
-
-  
+  { 
+    Nombre: "Dany", 
+    Habilidades: { 
+      Ataque: "Bueno", 
+      Defensa: "Bajo", 
+      Velocidad: "Normal", 
+      Aceleracion: "Bajo", 
+      Posicion: "Delantero" 
+    } ,
+    IMG: './jugadores/none.jpg'
+  },
 ];
   //JUGADORES SUPLENTES
 
