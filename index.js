@@ -11,7 +11,7 @@ const JUGADORES = [
     IMG: './jugadores/metalero.png'
   },
   { 
-    Nombre: "Nico", 
+    Nombre: "Marcelito", 
     Habilidades: { 
       Ataque: "Bajo", 
       Defensa: "Normal", 
@@ -22,26 +22,26 @@ const JUGADORES = [
     IMG: './jugadores/none.jpg'
   },
   { 
-    Nombre: "Lucas", 
-    Habilidades: { 
-      Ataque: "Bueno", 
-      Defensa: "Normal", 
-      Velocidad: "Normal", 
-      Aceleracion: "Bueno", 
-      Posicion: "Central" 
-    } ,
-    IMG: './jugadores/none.jpg'
-  },
-  { 
     Nombre: "Leo", 
     Habilidades: { 
       Ataque: "Normal", 
       Defensa: "Bueno", 
-      Velocidad: "Bueno", 
-      Aceleracion: "Normal", 
+      Velocidad: "Normal", 
+      Aceleracion: "Bueno", 
       Posicion: "Central" 
     },
     IMG: './jugadores/leo.png'
+  },
+  { 
+    Nombre: "Pablo", 
+    Habilidades: { 
+      Ataque: "Normal", 
+      Defensa: "Normal", 
+      Velocidad: "Normal", 
+      Aceleracion: "Normal", 
+      Posicion: "Central" 
+    } ,
+    IMG: './jugadores/none.jpg'
   },
   { 
     Nombre: "Rulo", 
@@ -52,10 +52,10 @@ const JUGADORES = [
       Aceleracion: "Bajo", 
       Posicion: "Lateral" 
     } ,
-    IMG: './jugadores/ariel.png'
+    IMG: './jugadores/none.jpg'
   },
   { 
-    Nombre: "Mati", 
+    Nombre: "Copes", 
     Habilidades: { 
       Ataque: "Normal", 
       Defensa: "Normal", 
@@ -63,7 +63,7 @@ const JUGADORES = [
       Aceleracion: "Normal", 
       Posicion: "Lateral" 
     } ,
-    IMG: './jugadores/mati.png'
+    IMG: './jugadores/none.jpg'
   },
   { 
     Nombre: "Yoel", 
@@ -77,40 +77,18 @@ const JUGADORES = [
     IMG: './jugadores/none.jpg'
   },
   { 
-    Nombre: "Daro", 
+    Nombre: "Caco", 
     Habilidades: { 
       Ataque: "Normal", 
-      Defensa: "Normal", 
-      Velocidad: "Normal", 
+      Defensa: "Bueno", 
+      Velocidad: "Bueno", 
       Aceleracion: "Bueno", 
       Posicion: "Lateral" 
     },
-    IMG: './jugadores/none.jpg'
+    IMG: './jugadores/caco.png'
   },
   { 
-    Nombre: "Fede(mati)", 
-    Habilidades: { 
-      Ataque: "Bueno", 
-      Defensa: "Normal", 
-      Velocidad: "Bueno", 
-      Aceleracion: "Bueno", 
-      Posicion: "Mediocampista" 
-    } ,
-    IMG: './jugadores/none.jpg'
-  },
-  { 
-    Nombre: "Seb", 
-    Habilidades: { 
-      Ataque: "Bueno", 
-      Defensa: "Normal", 
-      Velocidad: "Bueno", 
-      Aceleracion: "Bueno", 
-      Posicion: "Mediocampista" 
-    } ,
-    IMG: './jugadores/seba.png'
-  },
-  { 
-    Nombre: "Marolla", 
+    Nombre: "Cristian", 
     Habilidades: { 
       Ataque: "Normal", 
       Defensa: "Bueno", 
@@ -118,7 +96,29 @@ const JUGADORES = [
       Aceleracion: "Bueno", 
       Posicion: "Mediocampista" 
     } ,
-    IMG: './jugadores/marolla.png'
+    IMG: './jugadores/cristian.png'
+  },
+  { 
+    Nombre: "Lucas", 
+    Habilidades: { 
+      Ataque: "Bueno", 
+      Defensa: "Normal", 
+      Velocidad: "Normal", 
+      Aceleracion: "Bueno", 
+      Posicion: "Mediocampista" 
+    } ,
+    IMG: './jugadores/none.jpg'
+  },
+  { 
+    Nombre: "Polar", 
+    Habilidades: { 
+      Ataque: "Bueno", 
+      Defensa: "Normal", 
+      Velocidad: "Normal", 
+      Aceleracion: "Bajo", 
+      Posicion: "Mediocampista" 
+    } ,
+    IMG: './jugadores/none.jpg'
   },
   { 
     Nombre: "Fede T", 
