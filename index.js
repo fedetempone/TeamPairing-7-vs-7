@@ -1,6 +1,6 @@
 const JUGADORES = [
   { 
-    Nombre: "Metalero", 
+    Nombre: "Fede", 
     Habilidades: { 
       Ataque: "Bajo", 
       Defensa: "Bueno", 
@@ -8,10 +8,10 @@ const JUGADORES = [
       Aceleracion: "Normal", 
       Posicion: "Arquero" 
     },
-    IMG: './jugadores/metalero.png'
+    IMG: './jugadores/fedet.png'
   },
   { 
-    Nombre: "Marcelito", 
+    Nombre: "Bocha", 
     Habilidades: { 
       Ataque: "Bajo", 
       Defensa: "Normal", 
@@ -33,7 +33,7 @@ const JUGADORES = [
     IMG: './jugadores/leo.png'
   },
   { 
-    Nombre: "Pablo", 
+    Nombre: "Lucas", 
     Habilidades: { 
       Ataque: "Normal", 
       Defensa: "Normal", 
@@ -77,15 +77,15 @@ const JUGADORES = [
     IMG: './jugadores/none.jpg'
   },
   { 
-    Nombre: "Caco", 
+    Nombre: "Mati", 
     Habilidades: { 
       Ataque: "Normal", 
       Defensa: "Bueno", 
-      Velocidad: "Bueno", 
-      Aceleracion: "Bueno", 
+      Velocidad: "Normal", 
+      Aceleracion: "Normal", 
       Posicion: "Lateral" 
     },
-    IMG: './jugadores/caco.png'
+    IMG: './jugadores/mati.png'
   },
   { 
     Nombre: "Cristian", 
@@ -99,15 +99,15 @@ const JUGADORES = [
     IMG: './jugadores/cristian.png'
   },
   { 
-    Nombre: "Lucas", 
+    Nombre: "Marolla", 
     Habilidades: { 
-      Ataque: "Bueno", 
-      Defensa: "Normal", 
+      Ataque: "Normal", 
+      Defensa: "Bueno", 
       Velocidad: "Normal", 
       Aceleracion: "Bueno", 
       Posicion: "Mediocampista" 
     } ,
-    IMG: './jugadores/none.jpg'
+    IMG: './jugadores/marolla.png'
   },
   { 
     Nombre: "Polar", 
@@ -121,26 +121,26 @@ const JUGADORES = [
     IMG: './jugadores/none.jpg'
   },
   { 
-    Nombre: "Fede T", 
+    Nombre: "Seb",
     Habilidades: { 
-      Ataque: "Normal", 
-      Defensa: "Bajo", 
+      Ataque: "Bueno", 
+      Defensa: "Normal", 
       Velocidad: "Bueno", 
       Aceleracion: "Bueno", 
       Posicion: "Mediocampista" 
     } ,
-    IMG: './jugadores/fedet.png'
+    IMG: './jugadores/seba.png'
   },
   { 
-    Nombre: "Bocha", 
+    Nombre: "Marce", 
     Habilidades: { 
       Ataque: "Bueno", 
       Defensa: "Bajo", 
       Velocidad: "Normal", 
-      Aceleracion: "Bajo", 
+      Aceleracion: "Normal", 
       Posicion: "Delantero" 
     } ,
-    IMG: './jugadores/none.jpg'
+    IMG: './jugadores/marce.png'
   },
   { 
     Nombre: "Dany", 
